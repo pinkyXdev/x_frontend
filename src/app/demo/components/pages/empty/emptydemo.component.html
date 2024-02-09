@@ -1,0 +1,17 @@
+<div class="grid">
+    <div class="col-12">
+        <div class="card">
+            <h4>Empty Page</h4>
+            <p>This is your empty page template to start building beautiful applications.</p>
+        </div>
+
+        <div *ngFor="let product of products">
+            <h2>{{ product.it_pro_name }}</h2>
+            <p>รหัสสินค้า: {{ product.it_pro_code }}</p>
+            <p>รุ่น: {{ product.it_pro_model }}</p>
+            <p>วันที่ซื้อ: {{ product.it_pro_purchase_date }}</p>
+            <p>ราคา: {{ product.it_pro_price }}</p>
+            <!-- เพิ่มข้อมูลอื่น ๆ ตามต้องการ -->
+        </div>
+    </div>
+</div>
